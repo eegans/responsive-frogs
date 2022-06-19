@@ -1,0 +1,343 @@
+/*
+ * Global application theme.
+ * Framework overrides and customization goes here.
+ */
+ @use "@angular/material" as mat;
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+ @import url(https://fonts.googleapis.com/css?family=Epilogue:400,500,700);
+
+// ****  Basic Variables  ****** //
+// *****************************//
+$primary-font: "Open Sans", sans-serif; //Main site font
+$secondary-font: "Epilogue", sans-serif; //Header font
+$primary-font-color: #242424; //Main text
+$primary-color: #3f51b5;
+$accent-color: #ff4081;
+$primary-text-color: #fff;
+
+//Grey shades used throughout
+$grey-shades: mat.define-palette(mat.$grey-palette, 500, 200, 900); //Shades of grey. Med, Light, Dark
+
+//Colors for warning, success, error messages
+$success-color: #43a047;
+$warning-color: #e67e22;
+$error-color: #b92933;
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+html, body {
+    height: 100vh; 
+    background-color: #f5f5f5;
+    font-family: $primary-font;
+    --lh: 1.4rem;
+    line-height: var(--lh);
+    margin: 0;
+}
+
+body {
+   background-color: #b0bec5;
+   background-image: linear-gradient(#b0bec5 0, #f5f5f5 50% 100%); 
+}
+
+footer {
+  margin-top: 3.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+//(MIN, VAL, MAX)
+h1 {
+  font-size: clamp(1.5rem, 2.5vw, 2.4rem);
+}
+
+h2, h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2.4rem);
+}
+
+// ********* Navigation *********** ///
+// *************************************************//
+nav {
+  margin-left: 40px;
+}
+.navbar-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+app-navbar .navbar-header .navbar-header-item-selected {
+  background: rgba(0,0,0,.2);
+}
+
+nav .menu-button {
+  margin: 0.8em 0;
+}
+
+.mat-menu-content,
+.mat-menu-content:not(:empty) {
+  padding: 0 !important;
+}
+.mat-menu-panel {
+  border-radius: 0px !important;
+}
+.cdk-overlay-connected-position-bounding-box {
+  top: 114px;
+  left: 210px;
+}
+
+.mat-form-field {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+//sections
+.frog-container {
+  margin-top: 30px;
+}
+
+//Cards
+.container .card {
+  box-shadow: rgb(11 43 158 / 15%) 0px 6px 20px -6px;
+  border-radius: 15px;
+}
+.card {
+    max-width: 400px;
+    max-height: fit-content;
+   
+  }
+  
+  .mat-card-content {
+    max-height: 80px;
+    overflow: hidden;
+    min-height: 80px;
+  }
+  .fade {
+    position: relative;
+    height: 3.6em; /* exactly three lines */
+  }
+  .fade:after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 1.2em;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+  }
+
+ .mat-typography {
+    font: 400 16px/20px $primary-font;
+  }
+
+  .mat-card-subtitle, .mat-card-content {
+    font: 400 16px/20px 'Roboto';
+  }
+
+  .mat-card, .mat-button {
+    font-family: $primary-font, "Helvetica Neue", sans-serif;
+}
+ 
+.mat-card-title, .mat-button {
+  font-weight: 600;
+}
+
+//Grid System
+.container,
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.item {
+  background-color: #3f51b5;
+  width: 100px;
+  height: 100px;
+}
+
+.col, .col-auto {
+  gap: 20px;
+}
+
+.col {
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.col-auto {
+  flex-grow: 1;
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+
+
+
+//Utility classes
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+
+
+// x axis / horizontal alignments
+.justify-start {
+  justify-content: flex-start !important;
+}
+
+.justify-end {
+  justify-content: flex-end !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.justify-around {
+  justify-content: space-around !important;
+}
+
+.justify-evenly {
+  justify-content: space-evenly !important;
+}
+
+// y axis / vertical alignments
+.align-start {
+  align-items: flex-start !important;
+}
+
+.align-end {
+  align-items: flex-end !important;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+.align-baseline {
+  align-items: baseline !important;
+}
+
+.align-stretch {
+  align-items: stretch !important;
+}
+
+
+
+
+// ****  Other Responsive Design  ****** //
+// *****************************//
+// Mobile Devices/Phone
+@media (min-width: 300px) {
+  .mat-toolbar-top a {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  //General
+  .hide-sm {
+    display: none;
+  }
+  .show-md {
+    display: none;
+  }
+  .show-lg {
+    display: none;
+  }
+  .show-sm {
+    display: flex;
+  }
+  h1, h2, h3 {
+    //text-align: center;
+    //font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-sm {
+    display: block;
+  }
+  .show-sm {
+    display: none;
+  }
+  .show-md {
+    display: flex;
+  }
+
+  h1, h2, h3 {
+   // text-align: center;
+  //  font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,31 @@
+<mat-toolbar class="mat-toolbar-bottom mat-elevation-z6">
+  <div class="col-md-12" *ngIf="isLoaded">
+    <mat-form-field>
+      <mat-select placeholder="Location" (selectionChange)="onDropdownChange($event)">
+        <mat-option *ngFor="let option of dropdownOptions" [value]="option.region">
+          {{option.region}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</mat-toolbar>
+
+<div class="container" role="main" *ngIf="isLoaded">
+  <div class="frog-container row">
+    <div class="col" *ngFor='let frog of filteredFrogs'>
+      <mat-card class="card">
+        <mat-card-header>
+          <mat-card-title>{{frog.name}} </mat-card-title>
+          <mat-card-subtitle>{{frog.species}} </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src='{{frog.img}}' alt="Image of {{frog.name}}">
+        <mat-card-content class="fade">
+          <p title="{{frog.desc}}">{{frog.desc}} </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a mat-button color="accent" href="{{frog.link}}" target="_blank">LEARN MORE</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
