@@ -1,6 +1,26 @@
 # ResponsiveFrogs
+This web app was created for my Responsive Design tech talk. It includes cards of frogs and various pages featuring responsive methods.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+
+## Prerequisites
+
+Before you can run this project you need to have a couple things installed first.
+
+1. Install the latest version of [Node.js](https://nodejs.org/en/)
+2. Install the latest version of [NPM](https://www.npmjs.com/get-npm)
+3. Install the latest version of [Angular CLI](https://angular.io/guide/setup-local)
+
+## Get Started!
+
+1. After you download Node, go to project folder and install dependencies:
+
+```sh
+npm install
+```
+```sh
+npm install -g @angular/cli
+```
 
 ## Development server
 
