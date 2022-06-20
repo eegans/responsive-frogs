@@ -4,5 +4,6 @@ export interface Frog {
     desc: string;
     region: string;
     img: string;
+    srcset: string[];
     link: string;
 }

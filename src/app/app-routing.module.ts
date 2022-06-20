@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; 
 import { FlexComponent } from './flex/flex.component';
 import { FrogsComponent } from './frogs/frogs.component';
+import { ImagesComponent } from './images/images.component';
 
 const routes: Routes = [
   { path: '', component: FrogsComponent },
   { path: 'frogs', component: FrogsComponent },
   { path: 'flex', component: FlexComponent },
+  { path: 'images', component: ImagesComponent },
   { path: '**', component: FrogsComponent },
 ];
 

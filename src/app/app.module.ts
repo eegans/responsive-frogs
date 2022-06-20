@@ -14,12 +14,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FrogService } from './service/frog.service';
 import { FlexComponent } from './flex/flex.component';
 import { FrogsComponent } from './frogs/frogs.component';
+import { ImagesComponent } from './images/images.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
     FlexComponent,
-      FrogsComponent
+      FrogsComponent,
+      ImagesComponent
    ],
   imports: [
     BrowserModule,

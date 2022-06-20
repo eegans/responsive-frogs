@@ -1,14 +1,39 @@
 <!-- Toolbar -->
-<mat-toolbar color="accent" class="mat-elevation-z6">
-  <span>Responsive Frogs</span>
-  <nav>
-    <a mat-button routerLink="/frogs" routerlinkactive="navbar-header-item-selected"
-      class="mat-focus-indicator navbar-hide-small navbar-header-item-selected"> Frogs</a>
-      <a mat-button routerLink="/flex" routerlinkactive="navbar-header-item-selected"
-      class="mat-focus-indicator navbar-hide-small navbar-header-item-selected"> Flex Examples</a>
-  </nav>
 
-</mat-toolbar>
+  <mat-toolbar color="accent" class="mat-elevation-z6">
+    <div class="show-md show-lg">
+      <span>Responsive Frogs</span>
+      <nav>
+        <a mat-button routerLink="/frogs" routerlinkactive="navbar-header-item-selected"
+          class="mat-focus-indicator navbar-hide-small navbar-header-item-selected"> Frogs</a>
+          <a mat-button routerLink="/flex" routerlinkactive="navbar-header-item-selected"
+          class="mat-focus-indicator navbar-hide-small navbar-header-item-selected"> Flex Examples</a>
+          <a mat-button routerLink="/images" routerlinkactive="navbar-header-item-selected"
+          class="mat-focus-indicator navbar-hide-small navbar-header-item-selected"> Image Examples</a>
+      </nav>
+      
+    </div>
+    
+
+    <div class="show-sm no-gutters align-items-center">
+      <div class="col-auto">
+        <button class="menu-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Main menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <a routerLink="/frogs" mat-menu-item> Frogs</a>
+        <a routerLink="/flex" mat-menu-item>Flex Examples</a>
+        <a routerLink="/images" mat-menu-item>Image Examples</a>
+  
+        </mat-menu>
+      </div>
+        <span>Responsive Frogs</span>     
+    </div>  
+  
+  </mat-toolbar>
+
+
+
 
 <router-outlet class="fullHeight"></router-outlet>
 

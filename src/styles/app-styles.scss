@@ -97,6 +97,11 @@ nav .menu-button {
   margin-top: 15px;
 }
 
+.mat-toolbar > .show-sm span {
+  margin-top: 3px;
+}
+
+
 //sections
 .frog-container {
   margin-top: 30px;
@@ -108,9 +113,8 @@ nav .menu-button {
   border-radius: 15px;
 }
 .card {
-    max-width: 400px;
-    max-height: fit-content;
-   
+    max-width: 800px;
+    max-height: fit-content;   
   }
   
   .mat-card-content {
@@ -181,13 +185,26 @@ nav .menu-button {
 
 .col-auto {
   flex-grow: 1;
+  flex-basis: 31%; /* The base width */
 }
 
+@media (min-width: 300px) {
+  .container {
+    max-width: 95%;
+  }
+  .col-auto {
+    flex-basis: auto;
+  }
+}
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 95%;
   }
+  .col-auto {
+    flex-basis: 31%;
+  }
+  
 }
 @media (min-width: 768px) {
   .container {
