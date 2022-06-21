@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { FlexComponent } from './flex/flex.component';
 import { FrogsComponent } from './frogs/frogs.component';
 import { ImagesComponent } from './images/images.component';
+import { TypographyComponent } from './typography/typography.component';
 
 const routes: Routes = [
   { path: '', component: FrogsComponent },
   { path: 'frogs', component: FrogsComponent },
   { path: 'flex', component: FlexComponent },
   { path: 'images', component: ImagesComponent },
+  { path: 'typography', component: TypographyComponent },
   { path: '**', component: FrogsComponent },
 ];
 

@@ -15,13 +15,15 @@ import { FrogService } from './service/frog.service';
 import { FlexComponent } from './flex/flex.component';
 import { FrogsComponent } from './frogs/frogs.component';
 import { ImagesComponent } from './images/images.component';
+import { TypographyComponent } from './typography/typography.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
     FlexComponent,
       FrogsComponent,
-      ImagesComponent
+      ImagesComponent,
+      TypographyComponent
    ],
   imports: [
     BrowserModule,
