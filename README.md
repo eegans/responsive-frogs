@@ -1,9 +1,11 @@
 # ResponsiveFrogs
 This web app was created for my Responsive Design tech talk. It includes cards of frogs and various pages featuring responsive methods.
 
-This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+You can find the slides here -- [Responsive Design in 2022 Slides](https://github.com/eegans/responsive-frogs/tree/main/src/assets/Responsive-Design-Slides.pdf) 
+
 
 ## Prerequisites
+This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
 Before you can run this project you need to have a couple things installed first.
 
