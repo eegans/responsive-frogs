@@ -1,7 +1,7 @@
 # ResponsiveFrogs
 This web app was created for my Responsive Design tech talk. It includes cards of frogs and various pages featuring responsive methods.
 
-You can find the slides here -- [Responsive Design in 2022 Slides](https://github.com/eegans/responsive-frogs/tree/main/src/assets/Responsive-Design-Slides.pdf) 
+You can find the slides here -- [Responsive Design in 2022 Slides](https://github.com/eegans/responsive-frogs/blob/main/src/assets/pdfs/Responsive-Design-Slides.pdf) 
 
 
 ## Prerequisites
