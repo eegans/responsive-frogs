@@ -5,7 +5,7 @@ You can find the slides here -- [Responsive Design in 2022 Slides](https://githu
 
 
 ## Prerequisites
-This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
 
 Before you can run this project you need to have a couple things installed first.
 

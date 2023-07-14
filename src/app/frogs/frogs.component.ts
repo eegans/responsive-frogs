@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Frog } from '../models/frog';
 import { FrogService } from '../service/frog.service';
+import { NgOptimizedImage } from '@angular/common'
 
 @Component({
   selector: 'app-frogs',

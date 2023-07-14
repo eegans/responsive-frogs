@@ -7,7 +7,7 @@ export const frogs: Frog[] = [
       desc: 'The desert rain frog is a small, plump species with bulging eyes, a short snout, short limbs, spade-like feet, and webbed toes. The desert rain frog is mostly found on a small strip of land about 10 kilometres (6.2 mi) wide along the coast of Namibia and South Africa. It produces a high-pitched squeaking sound when threatened.',
       region: 'Africa',
       img: '../assets/Images/frog-11.png',
-      srcset: ['../assets/Images/frog-rain-400w.png 400w', '../assets/Images/frog-rain-800w.png 800w'],
+      srcset: ['../assets/Images/frog-rain-400w.png 400w', '../assets/Images/frog-rain-600w.png 600w', '../assets/Images/frog-rain-800w.png 800w'],
       link: 'https://en.wikipedia.org/wiki/Desert_Rain_Frog'
     },
     {
@@ -16,7 +16,7 @@ export const frogs: Frog[] = [
       desc: 'Pacman Frogs are small, mostly brown, frogs that live in the desert. They are known for their large, round eyes and their ability to jump.',
       region: 'South America',
       img: '../assets/Images/frog-10.png',
-      srcset: ['../assets/Images/frog-pac-400w.png 400w', '../assets/Images/frog-pac-800w.png 800w'],
+      srcset: ['../assets/Images/frog-pac-400w.png 400w', '../assets/Images/frog-pac-600w.png 600w', '../assets/Images/frog-pac-800w.png 800w'],
       link: 'https://en.wikipedia.org/wiki/Pacman_Frog'
     },
     {

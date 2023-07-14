@@ -103,7 +103,7 @@ nav .menu-button {
   left: 210px;
 }
 
-.mat-form-field {
+.mat-mdc-form-field {
   font-size: 1rem;
   margin-top: 15px;
 }
@@ -128,7 +128,7 @@ nav .menu-button {
     max-height: fit-content;   
   }
   
-  .mat-card-content {
+  .mat-mdc-card-content {
     max-height: 80px;
     overflow: hidden;
     min-height: 80px;
@@ -148,20 +148,28 @@ nav .menu-button {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
   }
 
- .mat-typography {
+ .mat-mdc-typography {
     font: 400 16px/20px $primary-font;
   }
 
-  .mat-card-subtitle, .mat-card-content {
+  .mat-mdc-card-subtitle, .mat-mdc-card-content {
     font: 400 16px/20px 'Roboto';
   }
 
-  .mat-card, .mat-button {
+  .mat-mdc-card, .mat-mdc-button {
     font-family: $primary-font, "Helvetica Neue", sans-serif;
 }
+
+.frog-container .mat-mdc-card-header {
+  padding-bottom: 16px;
+}
  
-.mat-card-title, .mat-button {
+.mat-mdc-card-title, .mat-mdc-button {
   font-weight: 600;
+}
+
+.frog-container .mat-mdc-card-image {
+  width: 100%;
 }
 
 //Grid System

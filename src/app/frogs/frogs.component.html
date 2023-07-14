@@ -21,8 +21,8 @@
 
         <img mat-card-image 
             srcset='{{frog.srcset}}'
-            src='{{frog.img}}'
             sizes='(max-width: 600px) 400px, 800px' 
+            ngSrcset="400w, 600w, 800w"
             alt="Image of {{frog.name}}">
 
         <mat-card-content class="fade">
